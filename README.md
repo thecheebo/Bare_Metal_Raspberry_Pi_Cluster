@@ -4,5 +4,3 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 <img src="https://i.imgur.com/5XSXLmu.jpg" width=50% height=50%>
 
-![4 RPIs](https://i.imgur.com/5XSXLmu.jpg){:height="10px" width="36px"}
-
