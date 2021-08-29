@@ -32,11 +32,9 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 
 
-
+abc
 <a name="setup"/>
-## Setup
-
-■■■■■■■■■■ STEPS ■■■■■■■■■■
+## Set Up
 
 a)  Visit: https://www.raspberrypi.org/software/
 Download Raspberry Pi Imager for your appropriate OS. (Choices are: windows macOS, ubuntu for x86). Install it.
@@ -60,13 +58,14 @@ g)  Add the following to the end of the line of text:
 Replace the first IP address to the one you want to set it as. Replace the mask as necessary. Replace the Name as necessary.
 Reference(ip=<client-ip>:<server-ip>:<gw-ip>:<netmask>:<hostname>:<device>:<autoconf>)
 
-h) Go back to the folder and open "config.txt". At the bottom of the file: add "arm_64bit=1"
+h) Go back to the folder and open `config.txt`. At the bottom of the file: add `arm_64bit=1`
 
 f) Open Powershell on windows, and go to the drive of your micro SD Card, could be anything from D-E-F-G-H... then type in the appropriate letter drive like: "F:"
   Then type in "new-item ssh" and you should see a response like this:
 
   <img src="https://i.imgur.com/VEG9OVv.jpg" alt="PowerShell" width=50% height=50%>
-
+  
+g) Insert Micro SD Card back into the Rpi. Plug the power in. Wait a sec. 
 
 
 
