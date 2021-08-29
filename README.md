@@ -3,9 +3,14 @@
 ##### Table of Contents  
 [Headers](#headers)  
 [Emphasis](#emphasis)  
- 
+...snip...    
 <a name="headers"/>
 ## Headers
+
+
+
+
+
 
 This is a walkthrough on how I built a bare-metal a networked cluster of four Raspberry Pis (4 b 4gb).
 
