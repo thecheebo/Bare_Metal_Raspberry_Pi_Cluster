@@ -14,7 +14,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 
 
-<a name="materials">
+
 ## MATERIALS
 
 
