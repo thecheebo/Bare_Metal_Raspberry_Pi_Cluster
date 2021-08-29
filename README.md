@@ -12,3 +12,22 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 )
 
 
+
+Steps:
+Visit: https://www.raspberrypi.org/software/
+
+Download Raspberry Pi OS for your appropriate OS. (Choices are: windows macOS, ubuntu for x86). Download it. Install it.
+Visit: https://www.raspberrypi.org/software/operating-systems/
+
+Sroll down to Raspberry Pi OS Lite, it is the smallest of the 3 image files at around 450mb. Download it.
+
+
+<img src="https://i.imgur.com/Q0AWvxK.jpg" alt="Raspberry Pi Imager" width=50% height=50%>
+
+
+It will ask if you want to format it (WARNING: Please back up any files on your micro sd card).
+
+
+
+
+
