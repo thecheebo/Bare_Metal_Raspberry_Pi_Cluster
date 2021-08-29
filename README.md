@@ -33,6 +33,10 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 <img src="https://i.imgur.com/WLjUSeF.jpg" alt="Assembled RPi's Cluster" width=50% height=50%>
 
+Hints:
+You can type `vcgencmd measure_temp` in the command line to check the temperatures of your CPU. With the heatsink and fan installed it should be cooler than your typical 50 degrees. I was running at 40ish degrees.
+
+You can also type `top` or `htop` to see your cpu usage.
 
 
 abc
