@@ -74,7 +74,6 @@ h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (
   sudo update-alternatives --set iptables /usr/sbin/iptables-legacy 
   sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 
   sudo reboot
-  print("hi
   ```
   
   
