@@ -15,6 +15,8 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 ---
 <a name="materials"/>
 ## Materials
+======
+***
 ---
 
 * [4 Raspberry Pi 4 Model B 4gb: $55](https://www.adafruit.com/product/4296)
