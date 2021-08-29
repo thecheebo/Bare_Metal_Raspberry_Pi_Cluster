@@ -112,8 +112,8 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
 <img src="https://i.imgur.com/TJvaVtX.jpg" alt="Kube confirmation" width=50% height=50%>
   
     
-<a name="maria">
 ## MariaDB
 
-
+Next we are goign to install the M of our LE'M'P stack. MariaDB.
+  
 
