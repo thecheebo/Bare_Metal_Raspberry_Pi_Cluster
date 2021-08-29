@@ -4,7 +4,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 ##### Table of Contents  
 [Materials](#materials)  
-[Inital Set Up](#inital-set-up)  
+[Inital Set Up](#initial-set-up)  
 [Kubernetes](#kubernetes)   
 [MariaDB](#mariadb) 
 
