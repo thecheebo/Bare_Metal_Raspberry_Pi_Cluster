@@ -93,6 +93,9 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
   sudo cat /var/lib/rancher/k3s/server/node-token
 
   ```
+  
+  If you sucessfully installed K3s you will see this output:
+  <img src="https://i.imgur.com/ZhCnhCt.jpg" alt="K3s" width=50% height=50%>
  c) SSH into all your other Raspberry Pi computers.
   
   ```
