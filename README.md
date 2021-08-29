@@ -68,10 +68,12 @@ f) Open Powershell on windows, and go to the drive of your micro SD Card, could 
 g) Insert Micro SD Card back into the Rpi. Plug the power in. Wait a sec. SSH back into the IP address you set at step G. For me it is `192.168.0.31`.
   
 h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (Link to Man pages).
-    ```sudo iptables -F 
+    ```
+  sudo iptables -F 
   sudo update-alternatives --set iptables /usr/sbin/iptables-legacy 
   sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 
-  sudo reboot```
+  sudo reboot
+  ```
   
   
   
