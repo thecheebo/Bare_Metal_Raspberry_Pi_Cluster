@@ -1,14 +1,14 @@
 # Hadoop Spark Raspberry Pi Cluster (4 Pi's)
 
 ##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
+[Materials](#materials)  
+[Set Up](#setup)  
 
 
 
 
 abc
-<a name="headers"/>
+<a name="materials"/>
 ## ABC
 
 
@@ -28,6 +28,8 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 )
 
 
+<a name="setup"/>
+## Setup
 
 ■■■■■■■■■■ STEPS ■■■■■■■■■■
 
