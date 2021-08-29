@@ -4,7 +4,9 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 ##### Table of Contents  
 [Materials](#materials)  
-[Set Up](#setup)  
+[Inital Set Up](#setup)  
+[Kubernetes](#kube)
+
 
 
 
@@ -34,7 +36,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 abc
 <a name="setup"/>
-## Set Up
+## Initial Set Up
 
 a)  Visit: https://www.raspberrypi.org/software/
 Download Raspberry Pi Imager for your appropriate OS. (Choices are: windows macOS, ubuntu for x86). Install it.
@@ -65,7 +67,7 @@ f) Open Powershell on windows, and go to the drive of your micro SD Card, could 
 
   <img src="https://i.imgur.com/VEG9OVv.jpg" alt="PowerShell" width=50% height=50%>
   
-g) Insert Micro SD Card back into the Rpi. Plug the power in. Wait a sec. SSH back into the IP address you set at step G. For me it is `192.168.0.31`.
+g) Insert Micro SD Card back into the Rpi. Plug the power in. Wait a sec. SSH back into the IP address you set at step G. `ssh pi@192.168.0.31` (Your address is likely to be different). Enter `yes` at the first prompt, then the default password is `raspberry`.
   
 h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (Link to Man pages).
   
@@ -76,9 +78,27 @@ h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (
   sudo reboot
   ```
   
+abc
+<a name="kube"/>
+## Kubernetes
   
+a) SSH back into your Raspberry Pi that will be your master node. For me it is `ssh pi@192.168.0.31`
   
+b) Install Kubernetes (specifically K3s. You can read the difference [here](https://www.civo.com/blog/k8s-vs-k3s)). 
+  ```
+  curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s -
   
+  #Save this token from the following command to be used later in YOURTOKEN
+  
+  sudo cat /var/lib/rancher/k3s/server/node-token
+
+  ```
+ c) SSH into all your other Raspberry Pi computers.
+  
+  ```
+  curl -sfL https://get.k3s.io | K3S_TOKEN="YOURTOKEN" K3S_URL="https://[your IP address]:6443" K3S_NODE_NAME="pick a name" sh 
+  ```
+  curl -sfL https://get.k3s.io | K3S_TOKEN="YOURTOKEN" K3S_URL="https://[your IP address]:6443" K3S_NODE_NAME="pick a name" sh 
 
 
 
