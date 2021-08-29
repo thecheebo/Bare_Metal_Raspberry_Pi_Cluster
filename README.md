@@ -54,7 +54,7 @@ e)  Turn off the power source. Remove the micro SD card and plug it back into yo
 f)  If you are on windows it should auto load the folder, if not open it up the folder and look for "cmdline.txt" and open it.
 
 g)  Add the following to the end of the line of text:
-"cgroup_memory=1 cgroup_enable=memory ip=192.168.X.XX::192.168.X.X:255.255.255.0:RaspberryPiXX:eth0:off" (replace all X's)
+```"cgroup_memory=1 cgroup_enable=memory ip=192.168.X.XX::192.168.X.X:255.255.255.0:RaspberryPiXX:eth0:off"``` (replace all X's)
 Replace the first IP address to the one you want to set it as. Replace the mask as necessary. Replace the Name as necessary.
 Reference(ip=<client-ip>:<server-ip>:<gw-ip>:<netmask>:<hostname>:<device>:<autoconf>)
 
