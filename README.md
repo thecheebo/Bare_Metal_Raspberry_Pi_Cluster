@@ -5,7 +5,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 ##### Table of Contents  
 [Materials](#materials)  
 [Inital Set Up](#setup)  
-[Kubernetes](#kube)
+[Kubernetes](#kube) 
 [MariaDB](#maria)
 
 
@@ -15,7 +15,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 <a name="materials">
 ## Materials
-
+***
 
 * [4 Raspberry Pi 4 Model B 4gb: $55](https://www.adafruit.com/product/4296)
 * [64gb Micro SD Card: $9](https://www.amazon.com/SanDisk-128GB-MicroSDXC-Ultra-Memory/dp/B07XDCZ9J3/ref=sr_1_6?dchild=1&keywords=sandisk+64gb+micro+sd+card&qid=1630199018&sr=8-6)
@@ -40,7 +40,7 @@ You can type `vcgencmd measure_temp` in the command line to check the temperatur
 You can also type `top` or `htop` to see your cpu usage.
 
 
-<a name="setup"/>
+<a name="setup">
 ## Initial Set Up
 
 a)  Visit: https://www.raspberrypi.org/software/
@@ -83,7 +83,7 @@ h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (
   sudo reboot
   ```
   
-<a name="kube"/>
+<a name="kube">
 ## Kubernetes
   
 a) SSH back into your Raspberry Pi that will be your master node. For me it is `ssh pi@192.168.0.31`
@@ -112,7 +112,7 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
 <img src="https://i.imgur.com/TJvaVtX.jpg" alt="Kube confirmation" width=50% height=50%>
   
     
-<a name="maria"/>
+<a name="maria">
 ## MariaDB
 
 
