@@ -6,6 +6,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 [Materials](#materials)  
 [Inital Set Up](#setup)  
 [Kubernetes](#kube)
+[App](#App)
 
 
 
@@ -95,17 +96,22 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
   ```
   
   If you sucessfully installed K3s you will see this output:
-  <img src="https://i.imgur.com/ZhCnhCt.jpg" alt="K3s" width=50% height=50%>
- c) SSH into all your other Raspberry Pi computers.
+  
+  <img src="https://i.imgur.com/ZhCnhCt.jpg" alt="K3s" width=50% height=50
+       
+ c) SSH into all your other Raspberry Pi computers. Replace YOURTOKEN with the value you saved from above, your ip address, and pick a name.
   
   ```
   curl -sfL https://get.k3s.io | K3S_TOKEN="YOURTOKEN" K3S_URL="https://[your IP address]:6443" K3S_NODE_NAME="pick a name" sh 
   ```
-  curl -sfL https://get.k3s.io | K3S_TOKEN="YOURTOKEN" K3S_URL="https://[your IP address]:6443" K3S_NODE_NAME="pick a name" sh 
-
-
-
-
+ d) After you have sucessfully done this for each of your raspberry pi nodes. You can go back to the master node and type in `kubectl get nodes`. You should see all connected nodes with a ready status and the time it has been connected.
+       
+<img src="https://i.imgur.com/TJvaVtX.jpg" alt="Kube confirmation" width=50% height=50%>
+  
+    
+abc
+<a name="App"/>
+## App
 
 
 
