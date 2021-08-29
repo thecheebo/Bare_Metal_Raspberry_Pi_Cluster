@@ -2,8 +2,8 @@
 
 ##### Table of Contents  
 [Headers](#headers)  
-[Emphasis](#emphasis) 
-  
+[Emphasis](#emphasis)  
+ 
 <a name="headers"/>
 ## Headers
 
