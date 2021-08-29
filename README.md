@@ -1,15 +1,9 @@
 # Hadoop Spark Raspberry Pi Cluster (4 Pi's)
 
 ##### Table of Contents  
-[Headers](#headers)
-[Set Up](#Set Up)  
-
-
-
-<a name="headers"/>
-## Headers
-
-
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
 <a name="headers"/>
 ## Headers
 
