@@ -116,4 +116,26 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
 
 Next we are goign to install the M of our LE'M'P stack. MariaDB.
   
+Now that you have a web server up and running, you need to install the database system to be able to store and manage data for your site.
+
+In Debian 10, the metapackage mysql-server, which was traditionally used to install the MySQL server, was replaced by default-mysql-server. This metapackage references MariaDB, a community fork of the original MySQL server by Oracle, and it’s currently the default MySQL-compatible database server available on debian-based package manager repositories.
+
+For longer term compatibility, however, it’s recommended that instead of using the metapackage you install MariaDB using the program’s actual package, mariadb-server.
+
+To install this software, run:
+
+sudo apt install mariadb-server
+ 
+When the installation is finished, it’s recommended that you run a security script that comes pre-installed with MariaDB. This script will remove some insecure default settings and lock down access to your database system. Start the interactive script by running:
+
+sudo mysql_secure_installation
+ 
+This script will take you through a series of prompts where you can make some changes to your MariaDB setup. The first prompt will ask you to enter the current database root password. This is not to be confused with the system root. The database root user is an administrative user with full privileges over the database system. Because you just installed MariaDB and haven’t made any configuration changes yet, this password will be blank, so just press ENTER at the prompt.
+
+The next prompt asks you whether you’d like to set up a database root password. Because MariaDB uses a special authentication method for the root user that is typically safer than using a password, you don’t need to set this now. Type N and then press ENTER.
+
+From there, you can press Y and then ENTER to accept the defaults for all the subsequent questions. This will remove anonymous users and the test database, disable remote root login, and load these new rules so that MariaDB immediately respects the changes you have made.
+When you’re finished, log in to the MariaDB console by typing:
+
+sudo mariadb
 
