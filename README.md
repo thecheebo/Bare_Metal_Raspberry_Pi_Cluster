@@ -14,7 +14,6 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 
 <a name="materials">
-
 ## Materials
 
 
@@ -41,7 +40,6 @@ You can type `vcgencmd measure_temp` in the command line to check the temperatur
 You can also type `top` or `htop` to see your cpu usage.
 
 
-abc
 <a name="setup"/>
 ## Initial Set Up
 
@@ -85,7 +83,6 @@ h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (
   sudo reboot
   ```
   
-abc
 <a name="kube"/>
 ## Kubernetes
   
@@ -115,7 +112,6 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
 <img src="https://i.imgur.com/TJvaVtX.jpg" alt="Kube confirmation" width=50% height=50%>
   
     
----
 <a name="maria"/>
 ## MariaDB
 
