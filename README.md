@@ -4,9 +4,9 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 ##### Table of Contents  
 [Materials](#materials)  
-[Inital Set Up](#setup)  
-[Kubernetes](#kube)   
-[MariaDB](#maria) 
+[Inital Set Up](#inital-set-up)  
+[Kubernetes](#kubernetes)   
+[MariaDB](#mariadb) 
 
 
 
@@ -15,7 +15,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 
 
-## MATERIALS
+## Materials
 
 
 * [4 Raspberry Pi 4 Model B 4gb: $55](https://www.adafruit.com/product/4296)
@@ -41,7 +41,7 @@ You can type `vcgencmd measure_temp` in the command line to check the temperatur
 You can also type `top` or `htop` to see your cpu usage.
 
 
-<a name="setup">
+
 ## Initial Set Up
 
 a)  Visit: https://www.raspberrypi.org/software/
@@ -84,7 +84,6 @@ h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (
   sudo reboot
   ```
   
-<a name="kube">
 ## Kubernetes
   
 a) SSH back into your Raspberry Pi that will be your master node. For me it is `ssh pi@192.168.0.31`
