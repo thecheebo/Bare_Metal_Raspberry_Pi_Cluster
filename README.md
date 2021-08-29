@@ -6,7 +6,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 [Materials](#materials)  
 [Inital Set Up](#setup)  
 [Kubernetes](#kube)
-[App](#App)
+[MariaDB](#maria)
 
 
 
@@ -113,9 +113,9 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
 <img src="https://i.imgur.com/TJvaVtX.jpg" alt="Kube confirmation" width=50% height=50%>
   
     
-abc
-<a name="App"/>
-## App
+---
+<a name="maria"/>
+## MariaDB
 
 
 
