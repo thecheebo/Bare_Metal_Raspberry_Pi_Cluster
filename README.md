@@ -51,7 +51,7 @@ d)  Insert the micro SD card into the Raspberry Pi and wait for it to finish boo
 
 e)  Turn off the power source. Remove the micro SD card and plug it back into your computer.
 
-f)  If you are on windows it should auto load the folder, if not open it up the folder and look for "cmdline.txt" and open it.
+f)  If you are on windows it should auto load the folder, if not open it up the folder and look for `"cmdline.txt"` and open it.
 
 g)  Add the following to the end of the line of text:
 ```"cgroup_memory=1 cgroup_enable=memory ip=192.168.X.XX::192.168.X.X:255.255.255.0:RaspberryPiXX:eth0:off"``` (replace all X's)
@@ -60,13 +60,21 @@ Reference(ip=<client-ip>:<server-ip>:<gw-ip>:<netmask>:<hostname>:<device>:<auto
 
 h) Go back to the folder and open `config.txt`. At the bottom of the file: add `arm_64bit=1`
 
-f) Open Powershell on windows, and go to the drive of your micro SD Card, could be anything from D-E-F-G-H... then type in the appropriate letter drive like: "F:"
-  Then type in "new-item ssh" and you should see a response like this:
+f) Open Powershell on windows, and go to the drive of your micro SD Card, could be anything from D-E-F-G-H... then type in the appropriate letter drive like: `"F:"`
+  Then type in `"new-item ssh"` and you should see a response like this:
 
   <img src="https://i.imgur.com/VEG9OVv.jpg" alt="PowerShell" width=50% height=50%>
   
-g) Insert Micro SD Card back into the Rpi. Plug the power in. Wait a sec. 
-
+g) Insert Micro SD Card back into the Rpi. Plug the power in. Wait a sec. SSH back into the IP address you set at step G. For me it is `192.168.0.31`.
+  
+h) We will now configure the [IP tables](https://linux.die.net/man/8/iptables) (Link to Man pages).
+    ```sudo iptables -F 
+  sudo update-alternatives --set iptables /usr/sbin/iptables-legacy 
+  sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 
+  sudo reboot```
+  
+  
+  
 
 
 
