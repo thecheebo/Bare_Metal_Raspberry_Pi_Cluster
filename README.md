@@ -8,7 +8,7 @@
 
 
 <a name="Purchase"/>
-## Purchase
+## Headers
 
 
 This is a walkthrough on how I built a bare-metal a networked cluster of four Raspberry Pis (4 b 4gb).
