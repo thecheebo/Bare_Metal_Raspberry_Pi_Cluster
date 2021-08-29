@@ -1,5 +1,7 @@
 # Hadoop Spark Raspberry Pi Cluster (4 Pi's)
 
+This is a walkthrough on how I built a bare-metal a networked cluster of four Raspberry Pis (4 b 4gb).
+
 ##### Table of Contents  
 [Materials](#materials)  
 [Set Up](#setup)  
@@ -9,12 +11,14 @@
 
 abc
 <a name="materials"/>
-## ABC
+## Materials
 
-
-
-
-
+* 2-4 Raspberry Pi 4 Model B 4gb
+* Micro SD Card
+* Router (Min 5 ports)
+* Lan Cables
+* Power Supplies
+* Cluster Case
 
 This is a walkthrough on how I built a bare-metal a networked cluster of four Raspberry Pis (4 b 4gb).
 
