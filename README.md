@@ -5,8 +5,9 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 ##### Table of Contents  
 [Materials](#materials)  
 [Inital Set Up](#setup)  
-[Kubernetes](#kube) 
-[MariaDB](#maria)
+[Kubernetes](#kube)   
+[MariaDB](#maria) 
+
 
 
 
@@ -14,8 +15,8 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 
 
 <a name="materials">
-## Materials
-***
+## MATERIALS
+
 
 * [4 Raspberry Pi 4 Model B 4gb: $55](https://www.adafruit.com/product/4296)
 * [64gb Micro SD Card: $9](https://www.amazon.com/SanDisk-128GB-MicroSDXC-Ultra-Memory/dp/B07XDCZ9J3/ref=sr_1_6?dchild=1&keywords=sandisk+64gb+micro+sd+card&qid=1630199018&sr=8-6)
