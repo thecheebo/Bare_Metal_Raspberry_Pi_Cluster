@@ -6,7 +6,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 [Materials](#materials)  
 [Inital Set Up](#initial-set-up)  
 [Kubernetes](#kubernetes)   
-[MariaDB](#mariadb) 
+[License](#license) 
 
 
 
@@ -110,6 +110,24 @@ b) Install Kubernetes (specifically K3s. You can read the difference [here](http
  d) After you have sucessfully done this for each of your raspberry pi nodes. You can go back to the master node and type in `kubectl get nodes`. You should see all connected nodes with a ready status and the time it has been connected.
        
 <img src="https://i.imgur.com/TJvaVtX.jpg" alt="Kube confirmation" width=50% height=50%>
+  
+## License
+  
+Copyright 2021 Albert Yeh
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.  
+  
+  
   
     
 ## MariaDB
