@@ -6,7 +6,7 @@ This is a walkthrough on how I built a bare-metal a networked cluster of four Ra
 [Materials](#materials)  
 [Inital Set Up](#initial-set-up)  
 [Kubernetes](#kubernetes)  
-[Credits](#credits)
+[Credits](#credits) <br>
 [License](#license) 
 
 
