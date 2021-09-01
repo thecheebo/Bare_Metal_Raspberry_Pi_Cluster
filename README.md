@@ -1,6 +1,6 @@
 # Bare-Metal Raspberry Pi Cluster (4 Pi's)
 
-This is a walkthrough on how I built a bare-metal a networked cluster of four Raspberry Pis (4 b 4gb).
+This is a walkthrough on how I built a bare-metal a networked cluster of four Raspberry Pis (4 Model B - 4gb).
 
 ##### Table of Contents  
 [Materials](#materials)  
